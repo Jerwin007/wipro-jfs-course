@@ -3,6 +3,7 @@ package Java_Fundamentals;
 public class Project1 {
 
     public static void main(String[] args) {
+        System.out.println("URK23CS1064");
 
         if (args.length == 0) {
             System.out.println("Please enter Employee ID");
