@@ -1,17 +1,11 @@
 package Inheritance;
-
-
 import java.util.Scanner;
-
 public class VideoLauncher {
-
     public static void main(String[] args) {
-
         Scanner sc = new Scanner(System.in);
+        System.out.println("URK23CS1064");
         VideoStore store = new VideoStore();
-
         int choice;
-
         do {
             System.out.println("\nMAIN MENU");
             System.out.println("=========");
