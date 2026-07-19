@@ -5,24 +5,21 @@ import java.util.Scanner;
 public class A3 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-
-        int positive = 0;
-        int negative = 0;
-
-        System.out.println("Enter 5 numbers:");
-
-        for (int i = 1; i <= 5; i++) {
-            int num = sc.nextInt();
-
-            if (num < 0)
-                negative++;
-            else
-                positive++;
-        }
-
-        System.out.println("Negative Numbers = " + negative);
-        System.out.println("Non-Negative Numbers = " + positive);
-
-        sc.close();
+        int sum=0, count=0;
+		int arr[]=new int[10];
+        System.out.print("URK23CS1064");
+		System.out.println("Fill the array with 10 values");
+		for(int i=0; i<arr.length;i++) {
+			arr[i]=sc.nextInt();
+			sum+=arr[i];
+			}
+		double avg=(double)sum/arr.length;
+		for(int i=0; i<arr.length;i++) {
+			if (arr[i]>avg){
+				count++;
+			}
+		}
+		System.out.print("Sum: "+ sum);
+		System.out.print("\nGreater than average: "+ count);
     }
 }
